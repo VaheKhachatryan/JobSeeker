@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [Global]
+    AUTHORIZATION [dbo];
+

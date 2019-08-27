@@ -1,0 +1,1 @@
+Scaffold-DbContext -Project "JobSeeker.DatabaseLayer" -StartupProject "JobSeeker" -Context "ApplicationDbContext" -Provider "Microsoft.EntityFrameworkCore.SqlServer" -OutputDir "Models" -Connection "server=.;Database=JobSeekerDB;Integrated Security=True;MultipleActiveResultSets=True;Connect Timeout=60;" -Force -Verbose

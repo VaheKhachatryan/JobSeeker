@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\JobSeeker.DatabaseLayer\JobSeeker.DatabaseLayer.csproj" />
+    <ProjectReference Include="..\JobSeeker.Messages\JobSeeker.Messages.csproj" />
+    <ProjectReference Include="..\JobSeeker.ViewModels\JobSeeker.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>
