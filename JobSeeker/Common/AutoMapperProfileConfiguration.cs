@@ -1,11 +1,15 @@
 ﻿using AutoMapper;
 using JobSeeker.DatabaseLayer.Models;
+using JobSeeker.Messages;
 using JobSeeker.Messages.DropDown;
+using JobSeeker.Messages.RequestMessages;
 using JobSeeker.ViewModels.DropDown;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using JobSeeker.ViewModels.Jobs;
+using JobSeeker.ViewModels.Job;
 
 namespace JobSeeker.Common
 {
@@ -24,6 +28,14 @@ namespace JobSeeker.Common
 				.ForMember(dest => dest.Value, opt => opt.MapFrom(src => src.EmploymentType));
 
 			CreateMap<DropDownMessage, DropDownViewModel>();
+			CreateMap<JobSearchRequestViewModel, JobSearchRequestMessage>();
+			CreateMap<JobMessage, JobViewModel>();
+
+			CreateMap<Job, JobMessage>()
+				.ForMember(dest => dest.City, opt => opt.MapFrom(src => src.City.CityName))
+				.ForMember(dest => dest.EmploymentType, opt => opt.MapFrom(src => src.DictionaryEmploymentType.EmploymentType))
+				.ForMember(dest => dest.Category, opt => opt.MapFrom(src => src.DictionaryJobCategory.Category))
+				.ForMember(dest => dest.PostedDate, opt => opt.MapFrom(src => src.CreatedDate));
 		}
 	}
 }
