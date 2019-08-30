@@ -15,13 +15,15 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JobSeekerDB.Seed", "JobSeek
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "JobSeekerDB.Mock", "JobSeekerDB.Mock\JobSeekerDB.Mock.sqlproj", "{678C9B1B-B9F4-4CCA-AA7C-C2549440F88F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSeeker.DatabaseLayer", "JobSeeker.DatabaseLayer\JobSeeker.DatabaseLayer.csproj", "{CCA1C842-4DB1-4C90-8265-358FA0C6606E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobSeeker.DatabaseLayer", "JobSeeker.DatabaseLayer\JobSeeker.DatabaseLayer.csproj", "{CCA1C842-4DB1-4C90-8265-358FA0C6606E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSeeker.ViewModels", "JobSeeker.ViewModels\JobSeeker.ViewModels.csproj", "{F0555D14-E99F-49EC-A95F-B8F3BA69858A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobSeeker.ViewModels", "JobSeeker.ViewModels\JobSeeker.ViewModels.csproj", "{F0555D14-E99F-49EC-A95F-B8F3BA69858A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSeeker.Messages", "JobSeeker.Messages\JobSeeker.Messages.csproj", "{744BC87E-1960-4249-9D2A-547692B6EA50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobSeeker.Messages", "JobSeeker.Messages\JobSeeker.Messages.csproj", "{744BC87E-1960-4249-9D2A-547692B6EA50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSeeker.Services.Interfaces", "JobSeeker.Services.Interfaces\JobSeeker.Services.Interfaces.csproj", "{0FB32D53-F74F-4E43-AAD2-67BD0F95180C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobSeeker.Services.Interfaces", "JobSeeker.Services.Interfaces\JobSeeker.Services.Interfaces.csproj", "{0FB32D53-F74F-4E43-AAD2-67BD0F95180C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobSeeker.UI", "JobSeeker.UI\JobSeeker.UI.csproj", "{A7E32965-1F84-4FD7-9AA0-E7513A3E647E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{0FB32D53-F74F-4E43-AAD2-67BD0F95180C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FB32D53-F74F-4E43-AAD2-67BD0F95180C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FB32D53-F74F-4E43-AAD2-67BD0F95180C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7E32965-1F84-4FD7-9AA0-E7513A3E647E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E32965-1F84-4FD7-9AA0-E7513A3E647E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E32965-1F84-4FD7-9AA0-E7513A3E647E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E32965-1F84-4FD7-9AA0-E7513A3E647E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
