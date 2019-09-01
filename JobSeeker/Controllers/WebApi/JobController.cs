@@ -7,6 +7,7 @@ using JobSeeker.Messages.RequestMessages;
 using JobSeeker.Services.Interfaces.Job;
 using JobSeeker.ViewModels.Job;
 using JobSeeker.ViewModels.Jobs;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 

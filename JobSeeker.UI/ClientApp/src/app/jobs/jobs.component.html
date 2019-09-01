@@ -2,6 +2,41 @@
   <div class="card-header">
     {{title}}
   </div>
+  <nav class="navbar navbar-light bg-light">
+      <div class="row">
+          <div class="navbar-brand">
+              <label>City: </label>
+              <br/>
+              <select (change)="filterJobs($event.target.value, 1)">
+                  <option value="0">--All--</option>
+                  <option *ngFor="let city of cities" value={{city.id}}>
+                      {{city.value}}
+                  </option>
+              </select>
+          </div>
+          <div class="navbar-brand">
+              <label>Category: </label>
+              <br/>
+              <select (change)="filterJobs($event.target.value, 2)">
+                  <option value="0">--All--</option>
+                  <option *ngFor="let category of categories" value={{category.id}}>
+                      {{category.value}}
+                  </option>
+              </select>
+          </div>
+          <div class="navbar-brand">
+              <label>Employment type: </label>
+              <br/>
+              <select (change)="filterJobs($event.target.value, 3)">
+                  <option value="0">--All--</option>
+                  <option *ngFor="let employmnetType of employmnetTypes" value={{employmnetType.id}}>
+                      {{employmnetType.value}}
+                  </option>
+              </select>
+          </div>
+          </div>
+  </nav>
+
   <div class="card-body">
       <div class="col-md-12">
         <div class="table-responsive">
@@ -18,12 +53,16 @@
             </thead>
             <tbody>
                 <tr *ngFor="let job of jobs">
-                    <th>{{job.Title}}</th>
-                    <th>{{job.Description}}</th>
-                    <th>{{job.PostedDate | date}}</th>
-                    <th>{{job.Category}}</th>
-                    <th>{{job.City}}</th>
-                    <th>{{job.EmploymentType}}</th>
+                    <td>
+                      <a [routerLink]="['/job-detail']">
+                          {{job.title}}
+                      </a>                      
+                    </td>
+                    <td>{{job.description}}</td>
+                    <td>{{job.postedDate | date}}</td>
+                    <td>{{job.category}}</td>
+                    <td>{{job.city}}</td>
+                    <td>{{job.employmentType}}</td>
                   </tr>
             </tbody>
           </table>

@@ -1,10 +1,10 @@
 import { IJob } from "./IJob";
 
 export class Job implements IJob {
-    Title: string;
-    Description: string;
-    PostedDate: Date;
-    Category: string;
-    City: string;
-    EmploymentType: string;
+    title: string;
+    description: string;
+    postedDate: Date;
+    category: string;
+    city: string;
+    employmentType: string;
 }
