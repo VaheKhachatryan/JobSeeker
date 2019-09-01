@@ -2,7 +2,59 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="alert alert-primary" role="alert">
+	BENIVO
 </div>
+<div class="card">
+	<div class="card-header">
+		JOBS
+	</div>
+	<nav class="navbar navbar-light bg-light">
+			<div class="navbar-brand">
+				<label>City: </label>
+				<br />
+				<select>
+				</select>
+			</div>
+			<div class="navbar-brand">
+				<label>Category: </label>
+				<br />
+				<select>
+				</select>
+			</div>
+			<div class="navbar-brand">
+				<label>Employment type: </label>
+				<br />
+				<select>
+				</select>
+			</div>
+	</nav>
+	<div class="card-body">
+		<div class="col-md-12">
+			<div class="table-responsive">
+				<table class="table" *ngIf="jobs && jobs.length">
+					<thead>
+						<tr>
+							<th>Title</th>
+							<th>Description</th>
+							<th>PostedDate</th>
+							<th>Category</th>
+							<th>City</th>
+							<th>EmploymentType</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr *ngFor="let job of jobs">
+							<td>
+							</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>

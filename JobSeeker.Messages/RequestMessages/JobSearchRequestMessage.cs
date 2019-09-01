@@ -10,6 +10,8 @@ namespace JobSeeker.Messages.RequestMessages
 		public List<int> CategoryIds { get; set; }
 		public List<int> EmploymentIds { get; set; }
 
+		public int? Start { get; set; }
+		public int? End { get; set; }
 		public string SearchKeyWord { get; set; }
 	}
 }

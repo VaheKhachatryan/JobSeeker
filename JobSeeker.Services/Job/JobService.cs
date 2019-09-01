@@ -55,6 +55,21 @@ namespace JobSeeker.Services.Jobs
 				query = query.Where(item => requestMessage.EmploymentIds.Contains(item.DictionaryEmploymentTypeId));
 			}
 
+			if (requestMessage.End.GetValueOrDefault() > 0)
+			{
+				var startIndex = requestMessage.Start.GetValueOrDefault();
+
+				query = query.Skip(startIndex).Take(requestMessage.End.Value);
+			}
+
+			if (string.IsNullOrEmpty(requestMessage.SearchKeyWord))
+			{
+				query = query.Where(item => item.Title.StartsWith(requestMessage.SearchKeyWord)
+									|| item.Title.Contains(requestMessage.SearchKeyWord)
+									|| item.Description.StartsWith(requestMessage.SearchKeyWord)
+									|| item.Description.Contains(requestMessage.SearchKeyWord));
+			}
+
 			return query;
 		}
 	}
