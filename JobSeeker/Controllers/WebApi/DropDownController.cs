@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using JobSeeker.Services.Interfaces.Cache;
 using JobSeeker.ViewModels.DropDown;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
